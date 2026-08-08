@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mestre AI</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header>
+      <p class="eyebrow">AGENTE DE DESENVOLVIMENTO</p>
+      <h1>Mestre AI</h1>
+      <p class="subtitle">Nome provisório — inteligência para trabalhar ao lado do Mestre.</p>
+    </header>
+
+    <section id="messages" class="messages" aria-live="polite">
+      <article class="message assistant">
+        <strong>IA</strong>
+        <p>Olá, Mestre! O que vamos fazer hoje?</p>
+      </article>
+    </section>
+
+    <form id="chat-form" class="composer">
+      <textarea id="message" rows="3" maxlength="10000" placeholder="Digite uma tarefa..." required></textarea>
+      <button id="send-button" type="submit">Enviar</button>
+    </form>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
